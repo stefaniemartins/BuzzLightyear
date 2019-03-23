@@ -72,30 +72,14 @@ public class Principal
 
             if (opcao == 2)
             {
-                if(buzz.isCapacete() == true)
-                {
-                    System.out.println("\nO capacete já está aberto!");
-                }
-
-                else
-                {
-                    buzz.setCapacete(true);
-                    System.out.println("\nO capacete foi aberto!");
-                }
+                buzz.setCapacete(true);
+                System.out.println("\nO capacete foi aberto!");
             }
 
             if (opcao == 3)
             {
-                if(buzz.isCapacete() == false)
-                {
-                    System.out.println("\nO capacete já está fechado!");
-                }
-
-                else
-                {
-                    buzz.setCapacete(false);
-                    System.out.println("\nO capacete foi fechado!");
-                }
+                buzz.setCapacete(false);
+                System.out.println("\nO capacete foi fechado!");
             }
         }
 
@@ -131,31 +115,55 @@ public class Principal
 
             if (opcao == 2)
             {
-                if(buzz.isLaser() == true)
-                {
-                    System.out.println("\nO laser já está disparando!");
-                }
-
-                else
-                {
-                    buzz.setLaser(true);
-                    System.out.println("\nO laser está disparando!");
-                }
+                buzz.setLaser(true);
+                System.out.println("\nO laser está disparando!");
             }
 
             if (opcao == 3)
             {
-                if(buzz.isLaser() == false)
+                buzz.setLaser(false);
+                System.out.println("\nO laser parou de disparar!");
+
+            }
+        }
+
+        if (opcao == 4)
+        {
+            System.out.println(linhasSuperiores);
+            System.out.println("\u2502       Digite o que você deseja fazer com os braços:        \u2502");
+            System.out.println("\u2502                                                            \u2502");
+            System.out.println("\u2502       (1) Verificar estado                                 \u2502");
+            System.out.println("\u2502       (2) Realizar golpes                                  \u2502");
+            System.out.println("\u2502       (3) Parar os golpes                                  \u2502");
+            System.out.println(linhasInferiores);
+
+            opcao = teclado.nextInt();
+
+            if (opcao == 1)
+            {
+                if(buzz.isBraços() == true)
                 {
-                    System.out.println("\nO laser não está dispararando!");
+                    System.out.println("\nEstá realizando golpes!");
                 }
 
                 else
                 {
-                    buzz.setLaser(false);
-                    System.out.println("\nO laser parou de disparar!");
+                    System.out.println("\nNão está realizando golpes!");
                 }
             }
+
+            if (opcao == 2)
+            {
+                buzz.setBraços(true);
+                System.out.println("\nEstá realizando golpes!");
+            }
+
+            if (opcao == 3)
+            {
+                buzz.setBraços(false);
+                System.out.println("\nParou de realizar golpes!");
+            }
         }
+
     }
 }

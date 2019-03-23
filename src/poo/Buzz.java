@@ -50,4 +50,14 @@ public class Buzz
     {
         this.laser = laser;
     }
+
+    public boolean isBraços()
+    {
+        return braços;
+    }
+
+    public void setBraços(boolean braços)
+    {
+        this.braços = braços;
+    }
 }
