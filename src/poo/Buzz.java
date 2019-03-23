@@ -17,7 +17,7 @@ public class Buzz
         this.braço = braço;
         this.laser = laser;
         this.asas = asas;
-        
+
         frases[0] = "To infinity... and beyond!";
         frases[1] = "This isn't flying. This is falling with style!";
         frases[2] = "Sheriff, this is no time to panic.";
