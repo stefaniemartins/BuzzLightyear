@@ -165,5 +165,42 @@ public class Principal
             }
         }
 
+        if (opcao == 5)
+        {
+            System.out.println(linhasSuperiores);
+            System.out.println("\u2502        Digite o que você deseja fazer com as asas:         \u2502");
+            System.out.println("\u2502                                                            \u2502");
+            System.out.println("\u2502        (1) Verificar estado                                \u2502");
+            System.out.println("\u2502        (2) Abrir asas                                      \u2502");
+            System.out.println("\u2502        (3) Fechar asas                                     \u2502");
+            System.out.println(linhasInferiores);
+
+            opcao = teclado.nextInt();
+
+            if (opcao == 1)
+            {
+                if(buzz.isAsas() == true)
+                {
+                    System.out.println("\nAs asas estão abertas!");
+                }
+
+                else
+                {
+                    System.out.println("\nAs asas estão fechadas!");
+                }
+            }
+
+            if (opcao == 2)
+            {
+                buzz.setAsas(true);
+                System.out.println("\nAs asas foram abertas!");
+            }
+
+            if (opcao == 3)
+            {
+                buzz.setAsas(false);
+                System.out.println("\nAs asas foram fechadas!");
+            }
+        }
     }
 }

@@ -60,4 +60,14 @@ public class Buzz
     {
         this.braços = braços;
     }
+
+    public boolean isAsas()
+    {
+        return asas;
+    }
+
+    public void setAsas(boolean asas)
+    {
+        this.asas = asas;
+    }
 }
