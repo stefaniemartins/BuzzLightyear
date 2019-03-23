@@ -35,4 +35,9 @@ public class Buzz
     {
         this.capacete = capacete;
     }
+
+    public String randomFrases()
+    {
+        return frases[random.nextInt(6)];
+    }
 }

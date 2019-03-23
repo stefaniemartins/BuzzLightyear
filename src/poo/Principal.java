@@ -10,12 +10,12 @@ public class Principal
 
         Scanner teclado = new Scanner(System.in);
 
-        int quantidadeBuzz = 4;
+        int opcao = -1;
         String linhas = "\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500";
         String linhasSuperiores = "\u250C" + linhas + linhas + linhas + linhas + linhas + linhas + "\u2510";
         String linhasInferiores = "\u2514" + linhas + linhas + linhas + linhas + linhas + linhas + "\u2518";
 
-        while ((quantidadeBuzz < 1) || (quantidadeBuzz > 3))
+        while ((opcao < 1) || (opcao > 3))
         {
             System.out.println(linhasSuperiores);
             System.out.println("\u2502      Digite quantos Buzz Lightyear você deseja criar:      \u2502");
@@ -25,10 +25,12 @@ public class Principal
             System.out.println("\u2502      (3) 3 Buzz Lightyear                                  \u2502");
             System.out.println(linhasInferiores);
 
-            quantidadeBuzz = teclado.nextInt();
+            opcao = teclado.nextInt();
         }
 
-        while ((quantidadeBuzz < 1) || (quantidadeBuzz > 5))
+        opcao = -1;
+
+        while ((opcao < 1) || (opcao > 5))
         {
             System.out.println(linhasSuperiores);
             System.out.println("\u2502        Digite qual parte que você deseja acessar:          \u2502");
@@ -40,10 +42,10 @@ public class Principal
             System.out.println("\u2502        (5) Asas                                            \u2502");
             System.out.println(linhasInferiores);
 
-            quantidadeBuzz = teclado.nextInt();
+            opcao = teclado.nextInt();
         }
 
-        if (quantidadeBuzz == 1)
+        if (opcao == 1)
         {
             System.out.println(linhasSuperiores);
             System.out.println("\u2502       Digite o que você deseja fazer com o capacete:       \u2502");
@@ -53,9 +55,9 @@ public class Principal
             System.out.println("\u2502       (3) Fechar                                           \u2502");
             System.out.println(linhasInferiores);
 
-            quantidadeBuzz = teclado.nextInt();
+            opcao = teclado.nextInt();
 
-            if (quantidadeBuzz == 1)
+            if (opcao == 1)
             {
                 if(buzz.isCapacete() == true)
                 {
@@ -68,7 +70,7 @@ public class Principal
                 }
             }
 
-            if (quantidadeBuzz == 2)
+            if (opcao == 2)
             {
                 if(buzz.isCapacete() == true)
                 {
@@ -82,7 +84,7 @@ public class Principal
                 }
             }
 
-            if (quantidadeBuzz == 3)
+            if (opcao == 3)
             {
                 if(buzz.isCapacete() == false)
                 {
@@ -95,6 +97,11 @@ public class Principal
                     System.out.println("O capacete foi fechado!");
                 }
             }
+        }
+
+        if (opcao == 2)
+        {
+            System.out.println("\n" + buzz.randomFrases());
         }
     }
 }
