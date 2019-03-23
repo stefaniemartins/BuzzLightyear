@@ -61,12 +61,12 @@ public class Principal
             {
                 if(buzz.isCapacete() == true)
                 {
-                    System.out.println("O capacete está aberto!");
+                    System.out.println("\nO capacete está aberto!");
                 }
 
                 else
                 {
-                    System.out.println("O capacete está fechado!");
+                    System.out.println("\nO capacete está fechado!");
                 }
             }
 
@@ -74,13 +74,13 @@ public class Principal
             {
                 if(buzz.isCapacete() == true)
                 {
-                    System.out.println("O capacete já está aberto!");
+                    System.out.println("\nO capacete já está aberto!");
                 }
 
                 else
                 {
                     buzz.setCapacete(true);
-                    System.out.println("O capacete foi aberto!");
+                    System.out.println("\nO capacete foi aberto!");
                 }
             }
 
@@ -88,13 +88,13 @@ public class Principal
             {
                 if(buzz.isCapacete() == false)
                 {
-                    System.out.println("O capacete já está fechado!");
+                    System.out.println("\nO capacete já está fechado!");
                 }
 
                 else
                 {
                     buzz.setCapacete(false);
-                    System.out.println("O capacete foi fechado!");
+                    System.out.println("\nO capacete foi fechado!");
                 }
             }
         }
@@ -102,6 +102,60 @@ public class Principal
         if (opcao == 2)
         {
             System.out.println("\n" + buzz.randomFrases());
+        }
+
+        if (opcao == 3)
+        {
+            System.out.println(linhasSuperiores);
+            System.out.println("\u2502        Digite o que você deseja fazer com o laser:         \u2502");
+            System.out.println("\u2502                                                            \u2502");
+            System.out.println("\u2502        (1) Verificar estado                                \u2502");
+            System.out.println("\u2502        (2) Disparar                                        \u2502");
+            System.out.println("\u2502        (3) Parar de disparar                               \u2502");
+            System.out.println(linhasInferiores);
+
+            opcao = teclado.nextInt();
+
+            if (opcao == 1)
+            {
+                if(buzz.isLaser() == true)
+                {
+                    System.out.println("\nO laser está disparando!");
+                }
+
+                else
+                {
+                    System.out.println("\nO laser não está disparando!");
+                }
+            }
+
+            if (opcao == 2)
+            {
+                if(buzz.isLaser() == true)
+                {
+                    System.out.println("\nO laser já está disparando!");
+                }
+
+                else
+                {
+                    buzz.setLaser(true);
+                    System.out.println("\nO laser está disparando!");
+                }
+            }
+
+            if (opcao == 3)
+            {
+                if(buzz.isLaser() == false)
+                {
+                    System.out.println("\nO laser não está dispararando!");
+                }
+
+                else
+                {
+                    buzz.setLaser(false);
+                    System.out.println("\nO laser parou de disparar!");
+                }
+            }
         }
     }
 }

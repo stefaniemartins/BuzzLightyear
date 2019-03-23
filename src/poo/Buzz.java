@@ -40,4 +40,14 @@ public class Buzz
     {
         return frases[random.nextInt(6)];
     }
+
+    public boolean isLaser()
+    {
+        return laser;
+    }
+
+    public void setLaser(boolean laser)
+    {
+        this.laser = laser;
+    }
 }
