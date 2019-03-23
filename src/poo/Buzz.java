@@ -11,12 +11,12 @@ public class Buzz
     private boolean asas;
     Random random = new Random();
 
-    public Buzz(boolean capacete, boolean laser, boolean braços, boolean asas)
+    public Buzz()
     {
-        this.capacete = capacete;
-        this.laser = laser;
-        this.braços = braços;
-        this.asas = asas;
+        capacete = false;
+        laser = false;
+        braços =false;
+        asas = false;
 
         frases[0] = "To infinity... and beyond!";
         frases[1] = "This isn't flying. This is falling with style!";
