@@ -16,8 +16,8 @@
 
 - Ao rodar o programa irá aparecer um menu, no qual você irá digitar a quantidade de Buzz que você deseja criar.
 ┌────────────────────────────────────────────────────────────┐
-│      Digite quantos Buzz Lightyear você deseja criar:      │
-│                                                            │
+|      Digite quantos Buzz Lightyear você deseja criar:      │
+|                                                            │
 │      (1) 1 Buzz Lightyear                                  │
 │      (2) 2 Buzz Lightyear                                  │
 │      (3) 3 Buzz Lightyear                                  │
