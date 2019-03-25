@@ -1,10 +1,10 @@
-#**Buzz Lightyear**
+# **Buzz Lightyear**
 
-##**Projeto inicial**
+## **Projeto inicial**
 
 - Fazer uma classe para representar o Buzz Lightyear e uma outra classe onde seja possível instanciar até 3 e  nteragir com cada uma deles.
 
-##**Funcionalidades**
+## **Funcionalidades**
 
 - Capacete retrátil
 - 6 frases
@@ -12,7 +12,7 @@
 - Braço articulado para golpes
 - Abre as asas
 
-##**Modo de uso**
+## **Modo de uso**
 
 - Ao rodar o programa irá aparecer um menu, no qual você irá digitar a quantidade de Buzz que você deseja criar.
 
