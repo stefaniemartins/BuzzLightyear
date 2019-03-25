@@ -1,6 +1,6 @@
 # **Buzz Lightyear**
 
-![Buzz](https://media.giphy.com/media/ZKYJPGD1Bd31K/giphy.gif)
+![Buzz1](https://media.giphy.com/media/ZKYJPGD1Bd31K/giphy.gif)
 
 ## **Projeto inicial**
 
@@ -23,3 +23,5 @@
 - Com o boneco selecionado você irá digitar qual parte do boneco você deseja acessar: Capacete, frases, laser, braços e asas.
 
 - Com a parte do boneco selecionada, você irá digitar a ação que deseja realizar: Verificar estado, realizar a ação e parar de realizar a ação. (Estas opções irão ser diferentes para cada parte selecionada).
+
+![Buzz2](https://66.media.tumblr.com/b720a01462132a80f7129189da30ab5f/tumblr_o9rj9suZpN1r5zq6ao1_500.gif)
