@@ -1,6 +1,6 @@
 # **Buzz Lightyear**
 
-![Buzz](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjx487m653hAhXDJbkGHVvMCncQjRx6BAgBEAU&url=https%3A%2F%2Fgiphy.com%2Fgifs%2Fdisney-pixar-disneypixar-ZKYJPGD1Bd31K&psig=AOvVaw15Io7kHiwnoeSNzQgwt6NS&ust=1553622138500839.png)
+![Buzz](https://media.giphy.com/media/ZKYJPGD1Bd31K/giphy.gif)
 
 ## **Projeto inicial**
 
